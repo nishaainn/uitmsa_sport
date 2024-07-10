@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logout_options">
+        <item>Logout</item>
+        <!-- Add other options if needed -->
+    </string-array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <!-- User Icon Layout -->
+
+
+    <!-- Home Text -->
+
+    <!-- Know Text -->
+
+    <!-- CardView for Sport Image -->
+
+    <!-- About Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            layout="@layout/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/knowtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="Get to know UITM Shah Alam Sport Centre"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSport"
+            android:layout_width="351dp"
+            android:layout_height="219dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imageViewSport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sportuitm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/abouttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="In creating pages for UiTM Sport, ensure the content reflects the dynamic sporting culture and achievements of UiTM athletes across various disciplines. Highlight the prowess of teams such as volleyball, football, badminton, hockey, netball, rugby, basketball, bowling, golf, and baseball. Showcase their successes in local and national competitions, while promoting opportunities for student participation and support. Incorporate updates on upcoming events, match results, and athlete spotlights to foster a sense of pride and enthusiasm among students and staff. Utilize interactive features such as photo galleries and video highlights to enhance user engagement and showcase the vibrant sporting spirit at UiTM."
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/joinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="JOIN NOW"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Join Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

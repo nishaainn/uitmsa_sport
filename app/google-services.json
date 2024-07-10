@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052904454450",
+    "project_id": "uitmsa-sport-7a012",
+    "storage_bucket": "uitmsa-sport-7a012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052904454450:android:99960b5b611043568f3f2b",
+        "android_client_info": {
+          "package_name": "com.example.uitmsa_sport"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeeH9vQNzU_0sfXLUT22tLuhBWksiOu8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

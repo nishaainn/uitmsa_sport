@@ -10,17 +10,6 @@
     tools:context=".MainActivity">
 
     <!-- UiTM Logo -->
-    <ImageView
-        android:id="@+id/imageView_logo1"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:src="@drawable/uitm_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textView_welcome1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="16dp" />
 
     <!-- Welcome Text Line 1 -->
 
@@ -28,39 +17,36 @@
 
     <!-- Welcome Text Line 3 -->
 
-    <TextView
-        android:id="@+id/textView_welcome1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="WELCOME TO"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView_logo1"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/uitm_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView_logo1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_welcome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="200dp"
         android:text="UITM SHAH ALAM"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_welcome1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo1" />
 
     <TextView
         android:id="@+id/textView_welcome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:text="SPORT CLUB"
         android:textColor="@android:color/white"
         android:textSize="24sp"

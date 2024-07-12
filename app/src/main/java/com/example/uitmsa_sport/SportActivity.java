@@ -98,7 +98,7 @@ public class SportActivity extends AppCompatActivity {
                 int menuLogout = R.id.menu_logout;
                 if (item.getItemId() == menuLogout) {
                     auth.signOut();
-                    Intent intent = new Intent(SportActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(SportActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                     return true;

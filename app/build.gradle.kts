@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -42,4 +43,6 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation(libs.firebase.firestore)
     implementation("com.squareup.picasso:picasso:2.71828")
+
+    implementation ("com.google.android.gms:play-services-maps:17.0.1")
 }

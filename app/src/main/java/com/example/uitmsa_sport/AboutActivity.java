@@ -41,7 +41,7 @@ public class AboutActivity extends AppCompatActivity {
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AboutActivity.this, SportActivity.class);
+                Intent intent = new Intent(AboutActivity.this, FirstPage.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +66,7 @@ public class AboutActivity extends AppCompatActivity {
                 int menuLogout = R.id.menu_logout;
                 if (item.getItemId() == menuLogout) {
                         auth.signOut();
-                        Intent intent = new Intent(AboutActivity.this, LoginActivity.class);
+                        Intent intent = new Intent(AboutActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                         return true;

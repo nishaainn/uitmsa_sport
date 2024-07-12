@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uitmsa_sport"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlc7RhotxpwmPw3e1jxs037t0N9fvRZGE"></meta-data>
+        <activity
+            android:name=".FirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".FirstActivity"
+            android:exported="false" />
         <activity
             android:name=".SportActivity"
             android:exported="false" />

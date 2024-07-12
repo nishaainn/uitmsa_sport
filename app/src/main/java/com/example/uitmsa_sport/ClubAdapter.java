@@ -1,6 +1,7 @@
 package com.example.uitmsa_sport;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.graphics.drawable.Drawable;
 
 import com.example.uitmsa_sport.entities.Club;
 import com.squareup.picasso.Picasso;
@@ -49,9 +51,13 @@ public class ClubAdapter extends BaseAdapter {
             TextView textView = clubView.findViewById(R.id.textView);
 
             // Set layout parameters, scale type, padding for ImageView
-            imageView.setLayoutParams(new LinearLayout.LayoutParams(250, 250));
+            imageView.setLayoutParams(new LinearLayout.LayoutParams(400, 400));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
+
+            // Set the border drawable as background
+            Drawable border = mContext.getResources().getDrawable(R.drawable.border);
+            imageView.setBackground(border);
 
             // Set data to views
             Picasso.get().load(clubs[position].getIconURL()).into(imageView);
@@ -62,4 +68,5 @@ public class ClubAdapter extends BaseAdapter {
 
         return clubView;
     }
+
 }
